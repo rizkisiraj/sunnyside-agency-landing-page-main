@@ -414,20 +414,23 @@ footer .icon-menu {
 
 
      .mobile-nav{
-        display: none;
+        display: block;
         position: fixed;
         left: 50%;
         top: 6rem;
-        transform: translateX(-50%);
+        transform: translateX(-100%);
         background: hsl(46, 55%, 94%);
         text-align: center;
         padding: 2rem;
         z-index: 10;
         width: 80%;
-     }
+        opacity: 0;
+        transition: all 0.3s linear;
+}
 
      .active {
-        display: block;
+        transform: translateX(-50%);
+        opacity: 1;
     }
 
      .mobile-nav::after{
